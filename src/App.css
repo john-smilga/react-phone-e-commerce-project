@@ -1,7 +1,7 @@
 :root {
   --mainBlue: #2a2a72;
   --lightBlue: #009ffd;
-  --mainWhite: #eaf6ff;
+  --mainWhite: #f3f3f3;
   --mainDark: #232528;
   --mainDark: #000;
   --mainYellow: #ffa400;
@@ -9,8 +9,8 @@
 
 body {
   font-family: "Oswald", sans-serif !important;
-  background: var(--mainWhite);
-  color: var(--mainDark);
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
 }
 .text-title {
   font-family: "Permanent Marker", cursive;
