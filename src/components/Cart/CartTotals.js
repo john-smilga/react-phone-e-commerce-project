@@ -10,6 +10,7 @@ export default class CartTotals extends Component {
       cart,
       clearCart
     } = this.props.value;
+    const { history } = this.props;
     const emptyCart = cart.length === 0 ? true : false;
     return (
       <React.Fragment>
@@ -40,7 +41,11 @@ export default class CartTotals extends Component {
                   <span className="text-title">cart total :</span>{" "}
                   <strong>$ {cartTotal} </strong>
                 </h5>
-                <PayPalButton totalAmount={cartTotal} clearCart={clearCart} />
+                <PayPalButton
+                  totalAmount={cartTotal}
+                  clearCart={clearCart}
+                  history={history}
+                />
               </div>
             </div>
           </div>
